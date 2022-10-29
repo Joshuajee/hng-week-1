@@ -1,3 +1,5 @@
+
+
 .app {
   display: flex;
   flex-direction: column;
@@ -7,6 +9,19 @@
   padding-right: 8em;
 }
 
+.profile-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 24px;
+  isolation: isolate;
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
 .profile {
   display: flex;
   flex-direction: column;
@@ -14,7 +29,7 @@
   align-items: center;
   padding: 0px;
   width: 88px;
-  height: 88px;
+  background-color: #101828;
   border-radius: 275px;
   flex: none;
   order: 0;
@@ -30,6 +45,25 @@
   line-height: 150%;
   text-align: center;
   color: #101828;
+}
+
+.share {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  right: 13em;
+  top: 3.2em;
+  background: #FFFFFF;
+  border: 1px dashed #D0D5DD;
+  border-radius: 20px;
+}
+
+.share-hover {
+  position: absolute;
+  right: 13em;
+  top: 3.2em;
+  background: #FFFFFF;
+  border-radius: 20px;
 }
 
 .list-item {
@@ -56,6 +90,17 @@
   color: #101828;
   margin-top: 1em;
   text-decoration: none;
+}
+
+.list-item:hover {
+  background: #D0D5DD;
+}
+
+.socials-container {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  padding: 2em;
 }
 
 .footer {
