@@ -1,5 +1,6 @@
+import Footer from './Footer';
 import ListItem from './ListItem';
-import profile from './profile__img.png';
+import profile from './assets/profile__img.png';
 
 
 function App() {
@@ -23,8 +24,9 @@ function App() {
 
         <ListItem name={"Design Books"}/>
 
-
       </div>
+
+      <Footer />
 
     </div>
   );
