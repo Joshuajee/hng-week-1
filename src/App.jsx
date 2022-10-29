@@ -3,6 +3,8 @@ import Footer from './Footer';
 import ListItem from './ListItem';
 import share_ from './assets/share.png';
 import shareHover from './assets/share-hover.png';
+import menu_ from './assets/menu.png';
+import menuHover from './assets/menu-hover.png';
 import profile_img from './assets/profile__img.png';
 import profile_alt from './assets/profile_alt.png';
 import slack from './assets/slack.png';
@@ -23,6 +25,8 @@ function App() {
   const [profile, setProfile] = useState(profile_img);
   const [share, setShare] = useState(share_);
   const [shareClass, setShareClass] = useState('share');
+  const [menu, setMenu] = useState(menu_);
+  const [menuClass, setMenuClass] = useState("mobile-menu");
 
   const shareHoverFunc = () => {
     setShare(shareHover)
@@ -31,6 +35,17 @@ function App() {
 
   const shareFunc = () => {
     setShare(share_)
+    setShareClass("share")
+  }
+
+  const menuHoverFunc = () => {
+    setMenu(menuHover)
+    setMenuClass("mobile-menu-hover")
+  }
+
+  const menuFunc = () => {
+    setMenu(menuHover)
+    setMenuClass("mobile-menu")
   }
 
   return (
@@ -39,6 +54,8 @@ function App() {
       <div className="app">
 
         <img onMouseOver={shareHoverFunc} onMouseOut={shareFunc} className={shareClass} alt='share' id="share" src={share} />
+
+        <img onMouseOver={menuHoverFunc} onMouseOut={menuFunc} className={menuClass} alt='menu' id="mobile-menu" src={menu} />
 
         <div className='profile-section'>
 
