@@ -1,9 +1,9 @@
 const ListItem = (props) => {
     
     return (
-        <div className="list-item">
+        <a href={props.link} id={props.id} className="list-item">
             {props.name}
-        </div>
+        </a>
     )
 }
 

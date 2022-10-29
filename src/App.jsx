@@ -2,6 +2,15 @@ import Footer from './Footer';
 import ListItem from './ListItem';
 import profile from './assets/profile__img.png';
 
+const lists = [
+  {name: "Twitter Link", link: "https://twitter.com/EvuetaphaJoshua/", id: "twitterLink"},
+  {name: "Zuri Team", link: "https://training.zuri.team/", id: "btn__zuri"},
+  {name: "Zuri Books", link: "http://books.zuri.team/", id: "books"},
+  {name: "Python Books", link: "https://books.zuri.team/", id: "book_python"},
+  {name: "Background Check for Coders", link: "https://background.zuri.team", id: "pitch"},
+  {name: "Design Books", link: "https://books.zuri.team/design-rules/", id: "book_design"},
+]
+
 
 function App() {
   return (
@@ -9,20 +18,15 @@ function App() {
 
       <div className="app">
 
-        <img className='profile' alt='profile' src={profile} />
-        <h2 className='name'>Annette Black</h2>
+        <img className='profile' alt='profile' id="profile__img" src={profile} />
 
-        <ListItem name={"Twitter Link"}/>
+        <h2 className='name' id="twitter">EvuetaphaJoshua</h2>
 
-        <ListItem name={"Zuri Team"}/>
+        <h2 id="slack" style={{display: "none"}}> joshuajee </h2>
 
-        <ListItem name={"Zuri Books"}/>
-
-        <ListItem name={"Python Books"}/>
-
-        <ListItem name={"Background Check for Coders"}/>
-
-        <ListItem name={"Design Books"}/>
+        {
+          lists.map((list, index) => <ListItem key={index} name={list.name} link={list.link} id={list.id} />)
+        }
 
       </div>
 
