@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from "react-router-dom";
 import ListItem from '../components/ListItem';
 import share_ from '../assets/share.png';
 import shareHover from '../assets/share-hover.png';
@@ -67,6 +68,8 @@ export default function Home () {
             {
                 lists.map((list, index) => <ListItem key={index} name={list.name} link={list.link} id={list.id} />)
             }
+
+            <Link id={"contact"} className="list-item" to={"/contact"}> Contact Me </Link>
 
             <div className="socials-container">
 
