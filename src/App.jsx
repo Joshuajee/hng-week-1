@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import Footer from './Footer';
-import ListItem from './ListItem';
+import Footer from './components/Footer';
+import ListItem from './components/ListItem';
 import share_ from './assets/share.png';
 import shareHover from './assets/share-hover.png';
 import menu_ from './assets/menu.png';

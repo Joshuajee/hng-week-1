@@ -1,7 +1,7 @@
-import footerLogo from "./assets/footer_logo.png";
-import footerLogoMob from "./assets/footer_logo-mobile.png";
-import IG4 from "./assets/I4G.png";
-import IG4Mob from "./assets/I4G-mobile.png";
+import footerLogo from "../assets/footer_logo.png";
+import footerLogoMob from "../assets/footer_logo-mobile.png";
+import IG4 from "../assets/I4G.png";
+import IG4Mob from "../assets/I4G-mobile.png";
 
 const Footer = () => {
 
