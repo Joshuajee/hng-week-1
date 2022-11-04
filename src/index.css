@@ -1,3 +1,10 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
 .app {
   display: flex;
   flex-direction: column;
@@ -5,19 +12,20 @@
   padding-top: 4em;
   padding-left: 8em;
   padding-right: 8em;
+  max-width: 87.5em;
+  width: calc(100% - 16em);
 }
 
 .profile-section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0px;
-  gap: 24px;
+  padding: 0em;
+  gap: 1.5em;
   isolation: isolate;
   flex: none;
   order: 0;
   align-self: stretch;
-  flex-grow: 0;
 }
 
 .profile {
@@ -25,13 +33,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0px;
-  width: 88px;
+  padding: 0em;
+  width: 5.5em;
   background-color: #101828;
-  border-radius: 275px;
+  border-radius:  17.1875em;
   flex: none;
   order: 0;
-  flex-grow: 0;
   z-index: 0;
   cursor: pointer;
 }
@@ -40,29 +47,28 @@
   font-family: 'Inter';
   font-style: normal;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 1.25em;
   line-height: 150%;
   text-align: center;
   color: #101828;
 }
 
 .share {
-  position: absolute;
-  right: 23%;
-  top: 3.2em;
+  position: relative;
+  right: -23%;
+  top: 1.25em;
   background: #FFFFFF;
-  border: 1px dashed #D0D5DD;
-  border-radius: 20px;
+  border-radius: 1.25em;
   cursor: pointer;
 }
 
 
 .share-hover {
-  position: absolute;
-  right: 23%;
-  top: 3.2em;
+  position: relative;
+  right: -23%;
+  top: 1.25em;
   background: #FFFFFF;
-  border-radius: 20px;
+  border-radius: 1.25em;
   cursor: pointer;
 }
 
@@ -76,21 +82,21 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 24px 32px;
-  gap: 8px;
+  padding: 1.5em 2em;
+  gap: 0.5em;
   width: 100%;
-  height: 76px;
+  height: 4.75em;
   background: #EAECF0;
-  border: 1px solid #EAECF0;
-  border-radius: 8px;
+  border: 0.0625em solid #EAECF0;
+  border-radius: 0.5em;
   flex: none;
   order: 0;
   flex-grow: 1;
   font-family: 'Inter';
   font-style: normal;
   font-weight: 500;
-  font-size: 18px;
-  line-height: 28px;
+  font-size: 1.125em;
+  line-height: 1.75em;
   color: #101828;
   margin-top: 1em;
   text-decoration: none;
@@ -103,11 +109,16 @@
 .socials-container {
   display: flex;
   justify-content: center;
-  gap: 24px;
+  gap: 1.5em;
   padding: 2em;
 }
 
+.footer-space {
+  flex-grow: 1;
+}
+
 .footer {
+  width: calc(100% - 8em);
   padding: 4em;
   display: block;
 }
@@ -118,17 +129,17 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 32px 0px 0px;
-  gap: 32px;
-  height: 64px;
-  border-top: 1px solid #EAECF0;
+  padding: 2em 0em 0em;
+  gap: 2em;
+  height: 4em;
+  border-top: 0.0625em solid #EAECF0;
 }
 
 .footer-text {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1em;
   line-height: 150%;
   text-align: center;
   color: #667085;
@@ -150,27 +161,28 @@
   display: none;
 }
 
-
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 62.5em) {
   .app {
     padding-left: 4em;
     padding-right: 4em;
+    width: calc(100% - 8em);
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 50em) {
   .app {
     padding-left: 2em;
     padding-right: 2em;
+    width: calc(100% - 4em);
   }
 
 }
 
-
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 37.5em) {
   .app {
     padding-left: 0.8em;
     padding-right: 0.8em;
+    width: calc(100% - 0.8em);
   }
 
   .share {
@@ -179,6 +191,7 @@
 
   .footer {
     padding: 0.8em;
+    width: calc(100% - 1.6em);
     display: block;
   }
   
@@ -189,15 +202,14 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    padding: 32px 0px 0px;
-    gap: 32px;
+    padding: 2em 0em 0em;
+    gap: 2em;
     flex: none;
-    order: 0;
-    flex-grow: 0;
+    order: 0;    
   }
   
   .footer-text {
-    font-size: 14px;
+    font-size: 0.875em;
     line-height: 143%;
     text-align: left;
   }
@@ -219,38 +231,36 @@
   }
 
   .list-item {
-    height: 68px;
+    height: 4.25em;
   }
 
   .mobile-menu {
     display: block;
     position: absolute;
-    width: 40px;
-    height: 40px;
+    width: 2.5em;
+    height: 2.5em;
     right: 2em;
     top: 3em;
     background: #FFFFFF;
-    border: 1px dashed #D0D5DD;
-    border-radius: 20px;
+    border: 0.0625em dashed #D0D5DD;
+    border-radius: 1.25em;
     flex: none;
     order: 2;
-    flex-grow: 0;
     z-index: 2;
   }
 
   .mobile-menu-hover {
     display: block;
     position: absolute;
-    width: 40px;
-    height: 40px;
+    width: 2.5em;
+    height: 2.5em;
     right: 2em;
     top: 3em;
     background: #FFFFFF;
-    border: 1px dashed #D0D5DD;
-    border-radius: 20px;
+    border: 0.0625em dashed #D0D5DD;
+    border-radius: 1.25em;
     flex: none;
     order: 2;
-    flex-grow: 0;
     z-index: 2;
   }
   

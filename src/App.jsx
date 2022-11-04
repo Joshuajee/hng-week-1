@@ -18,10 +18,11 @@ const router = createBrowserRouter([
 function App() {
 
   return (
-    <div>
+    <div className="container">
       <div className="app">
         <RouterProvider router={router} />
       </div>
+      <div className="footer-space"></div>
       <Footer />
     </div>
   );
