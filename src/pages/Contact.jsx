@@ -65,27 +65,27 @@ export default function Contact () {
                 <div className="name">
 
                     <div className="field">
-                        <label>First Name</label>
+                        <label for="first_name">First Name</label>
                         <input className={error(firstNameHint)} type={"text"}  id="first_name" placeholder="Enter your first name" onChange={editFirstName} />
                         {firstNameHint && <text className="helper-text">Name too short, minumum of 3 characters</text>}
                     </div>
 
                     <div className="field">
-                        <label>Last Name</label>
-                        <input className={error(lastNameHint)}  type={"text"}  id="last_name" placeholder="Enter your last name" onChange={editLastName} />
+                        <label for="last_name">Last Name</label>
+                        <input className={error(lastNameHint)} type={"text"}  id="last_name" placeholder="Enter your last name" onChange={editLastName} />
                         {lastNameHint && <text className="helper-text">Name too short, minumum of 3 characters</text>}
                     </div>
 
                 </div>
 
                 <div>
-                    <label>Email</label>
-                    <input className={error(emailHint)}  type={"email"} id="email" placeholder="yourname@email.com" onChange={editEmail} />
+                    <label for="email">Email</label>
+                    <input className={error(emailHint)} type={"email"} id="email" placeholder="yourname@email.com" onChange={editEmail} />
                     { emailHint && <text className="helper-text">Invalid email address.</text> }
                 </div>
 
                 <div className="msg_container">
-                    <label>Message</label>
+                    <label for="message">Message</label>
                     <textarea className={error(messageHint)}  id={"message"} placeholder="Send me a message i will reply as soon as possible..." onChange={editMessage}></textarea>
                     {messageHint && <text className="helper-text" style={{color: "#F83F23"}}>Message too short, minumum of 10 characters</text>}
                 </div>

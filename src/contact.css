@@ -213,5 +213,9 @@
     .contact__form input {
         margin-bottom: 1.4em;
     }
+
+    .contact__form .heading_2 {
+        font-size: 1.125em;
+    }
     
 }
