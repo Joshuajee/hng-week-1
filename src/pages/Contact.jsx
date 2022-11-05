@@ -27,7 +27,7 @@ export default function Contact () {
 
     const editEmail = (e) => {
         const value = e.target.value
-        if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(value)) return setEmailHint(false)
+        if (/^\w+([\\.-]?\w+)*@\w+([\\.-]?\w+)*(\.\w{2,3})+$/.test(value)) return setEmailHint(false)
         setEmailHint(true)
     }
 
