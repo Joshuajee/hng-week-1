@@ -84,7 +84,7 @@ export default function Contact () {
                     {/* <div><text className="helper-text">This is a hint text to help user.</text></div> */}
                 </div>
 
-                <button id="btn__submit" disabled>Send Message</button>
+                <button id="btn__submit">Send Message</button>
 
             </form>
 
