@@ -55,12 +55,8 @@
     box-sizing: border-box;
     width: 1.25em;
     height: 1.25em;
-    /* Base/White */
     background: #FFFFFF;
-    /* Gray/300 */
     border: 0.0625em solid #D0D5DD;
-    border-radius: 0.375em;
-    /* Inside auto layout */
     border-radius: 0.375em;
 }
 
@@ -216,6 +212,10 @@
 
     .contact__form .heading_2 {
         font-size: 1.125em;
+    }
+
+    .contact__form .term_check {
+        width: 1.4em;
     }
     
 }
