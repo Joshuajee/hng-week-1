@@ -219,7 +219,7 @@
   .footer-content {
     box-sizing: border-box;
     display: flex;
-    height: 12em;
+    height: 10em;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;

@@ -45,9 +45,13 @@
     border: 0.0625em solid #D0D5DD;
     border-radius: 0.375em;
     /* Inside auto layout */
-    flex: none;
-    order: 0;
-    flex-grow: 0;
+    border-radius: 0.375em;
+}
+
+
+.contact__form .term_check:hover {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 0px 0.25em #D1E9FF;
 }
 
 .contact__form .term div {
@@ -134,6 +138,22 @@
 }
 
 
+.contact__form form .helper-text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    /* identical to box height, or 143% */
+    /* Gray/600 */
+    color: #475467;
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
 .contact__form .msg_container {
     margin-top: 1.875em;
 }
@@ -158,6 +178,12 @@
 
 .contact__form form button:hover{
     background-color:  #175CD3;
+}
+
+.contact__form form button:disabled{
+    /* background-color:  #B2DDFF;
+    border: 1px solid #B2DDFF;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05); */
 }
 
 @media (max-width: 37.5em) {
