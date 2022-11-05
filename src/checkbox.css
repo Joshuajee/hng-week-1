@@ -2,8 +2,9 @@
     -webkit-appearance: initial;
     appearance: initial;
     border: none;
-    background: gray;
+    background: #fff;
     position: relative;
+    outline: 1px solid #D0D5DD;
 }
 .contact__form form input[type="checkbox"]:checked {
     background: #fff;
