@@ -1,0 +1,21 @@
+.contact__form form input[type="checkbox"]{
+    -webkit-appearance: initial;
+    appearance: initial;
+    border: none;
+    background: gray;
+    position: relative;
+}
+.contact__form form input[type="checkbox"]:checked {
+    background: #fff;
+}
+.contact__form form input[type="checkbox"]:checked:after {
+    content: url(./assets/icon-tick.svg);
+    color: #1570EF;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
