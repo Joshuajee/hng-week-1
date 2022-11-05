@@ -9,6 +9,7 @@ import profile_img from '../assets/profile__img.png';
 import profile_alt from '../assets/profile_alt.png';
 import slack from '../assets/slack.png';
 import github from '../assets/github.png';
+import toolTip from '../assets/tooltip.png';
 
 const lists = [
   {name: "Twitter Link", link: "https://twitter.com/EvuetaphaJoshua/", id: "twitter"},
@@ -23,18 +24,15 @@ export default function Home () {
 
     const [profile, setProfile] = useState(profile_img);
     const [share, setShare] = useState(share_);
-    const [shareClass, setShareClass] = useState('share');
     const [menu, setMenu] = useState(menu_);
     const [menuClass, setMenuClass] = useState("mobile-menu");
 
     const shareHoverFunc = () => {
         setShare(shareHover)
-        setShareClass("share-hover")
     }
 
     const shareFunc = () => {
         setShare(share_)
-        setShareClass("share")
     }
 
     const menuHoverFunc = () => {
@@ -51,7 +49,11 @@ export default function Home () {
     return (
         <>
 
-            <img onMouseOver={shareHoverFunc} onMouseOut={shareFunc} className={shareClass} alt='share' id="share" src={share} />
+            <div className='share-hover'>
+                <img onMouseOver={shareHoverFunc} onMouseOut={shareFunc} alt='share' id="share" src={share} />
+              
+                <img class="tooltiptext" src={toolTip} alt="Share Link" />
+            </div>
 
             <img onMouseOver={menuHoverFunc} onMouseOut={menuFunc} className={menuClass} alt='menu' id="mobile-menu" src={menu} />
 
