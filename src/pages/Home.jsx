@@ -61,7 +61,7 @@ export default function Home () {
 
                 <img onMouseOver={() => setProfile(profile_alt)} onMouseOut={() => setProfile(profile_img)} className='profile' alt='profile' id="profile__img" src={profile} />
 
-                <h2 className='name' >EvuetaphaJoshua</h2>
+                <h2 className='name_user' >EvuetaphaJoshua</h2>
 
                 <h2 id="slack" style={{display: "none"}}> joshuajee </h2>
 
